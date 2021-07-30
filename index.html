@@ -1,0 +1,373 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <!-- meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <!-- CSS links -->
+  
+    <link rel="stylesheet" href="css/bootstrap.css" class="css">
+    <link rel="stylesheet" href="css/style.css" class="css">
+    <link rel="stylesheet" href="css/media.css" class="css">
+    <title>BT5 Components</title>
+  </head>
+  <body>
+    
+    <!-- Alert Start -->
+    <section class="alert">
+      <div class="container">
+        <div class="col-md-6 mx-auto"> 
+          <h1>Alerts</h1>       
+    <svg xmlns="http://www.w3.org/2000/svg" style="display: none;">
+      <symbol id="check-circle-fill" fill="currentColor" viewBox="0 0 16 16">
+        <path d="M16 8A8 8 0 1 1 0 8a8 8 0 0 1 16 0zm-3.97-3.03a.75.75 0 0 0-1.08.022L7.477 9.417 5.384 7.323a.75.75 0 0 0-1.06 1.06L6.97 11.03a.75.75 0 0 0 1.079-.02l3.992-4.99a.75.75 0 0 0-.01-1.05z"/>
+      </symbol>
+      <symbol id="info-fill" fill="currentColor" viewBox="0 0 16 16">
+        <path d="M8 16A8 8 0 1 0 8 0a8 8 0 0 0 0 16zm.93-9.412-1 4.705c-.07.34.029.533.304.533.194 0 .487-.07.686-.246l-.088.416c-.287.346-.92.598-1.465.598-.703 0-1.002-.422-.808-1.319l.738-3.468c.064-.293.006-.399-.287-.47l-.451-.081.082-.381 2.29-.287zM8 5.5a1 1 0 1 1 0-2 1 1 0 0 1 0 2z"/>
+      </symbol>
+      <symbol id="exclamation-triangle-fill" fill="currentColor" viewBox="0 0 16 16">
+        <path d="M8.982 1.566a1.13 1.13 0 0 0-1.96 0L.165 13.233c-.457.778.091 1.767.98 1.767h13.713c.889 0 1.438-.99.98-1.767L8.982 1.566zM8 5c.535 0 .954.462.9.995l-.35 3.507a.552.552 0 0 1-1.1 0L7.1 5.995A.905.905 0 0 1 8 5zm.002 6a1 1 0 1 1 0 2 1 1 0 0 1 0-2z"/>
+      </symbol>
+    </svg>
+    
+    <div class="alert d-flex align-items-center alert-dismissible fade show alc a1" role="alert">
+      <svg class="bi flex-shrink-0 me-2" width="24" height="24" role="img" aria-label="Info:"><use xlink:href="#info-fill"/></svg>
+      <div>
+        An example alert with an information
+      </div>
+      <button type="button" class="btn-close" data-bs-dismiss="alert" aria-label="Close"></button>
+    </div>
+
+    <div class="alert alert-success d-flex align-items-center alert-dismissible fade show alc a2" role="alert">
+      <svg class="bi flex-shrink-0 me-2" width="24" height="24" role="img" aria-label="Success:"><use xlink:href="#check-circle-fill"/></svg>
+      <div>
+        An example success alert 
+      </div>
+      <button type="button" class="btn-close" data-bs-dismiss="alert" aria-label="Close"></button>
+    </div>
+
+    <div class="alert alert-warning d-flex align-items-center alert-dismissible fade show alc a3" role="alert">
+      <svg class="bi flex-shrink-0 me-2" width="24" height="24" role="img" aria-label="Warning:"><use xlink:href="#exclamation-triangle-fill"/></svg>
+      <div>
+        An example warning alert 
+      </div>
+      <button type="button" class="btn-close" data-bs-dismiss="alert" aria-label="Close"></button>
+    </div>
+
+    <div class="alert alert-danger d-flex align-items-center alert-dismissible fade show alc a4" role="alert">
+      <svg class="bi flex-shrink-0 me-2" width="24" height="24" role="img" aria-label="Danger:"><use xlink:href="#exclamation-triangle-fill"/></svg>
+      <div>
+        An example danger alert 
+      </div>
+      <button type="button" class="btn-close" data-bs-dismiss="alert" aria-label="Close"></button>
+    </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Alert Ends -->
+
+<!-- Accordian Start -->
+
+<section class="accordian">
+  <div class="container">
+  <div class="row">
+    <div class="col-md-6 mx-auto my-5">
+      <h1>Accordian</h1>
+<!-- FAQ 1 start -->
+      <div class="accordion accordion-flush" id="acc_one">
+        <div class="accordion-item">
+          <h2 class="accordion-header" id="h_one">
+            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#c_one" aria-expanded="false" aria-controls="c_one">
+              Lorem ipsum dolor sit.
+            </button>
+          </h2>
+          <div id="c_one" class="accordion-collapse collapse" aria-labelledby="h_one" data-bs-parent="#acc_one">
+            <div class="accordion-body">Placeholder content for this accordion, which is intended to demonstrate the <code>.accordion-flush</code> class. This is the first item's accordion body.</div>
+          </div>
+        </div>
+<!-- FAQ 1 End -->
+      
+        <div class="accordion-item">
+          <h2 class="accordion-header" id="h_two">
+            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#c_two" aria-expanded="false" aria-controls="c_two">
+              Lorem ipsum dolor sit amet consectetur, adipisicing elit.
+            </button>
+          </h2>
+          <div id="c_two" class="accordion-collapse collapse" aria-labelledby="h_two" data-bs-parent="#acc_two">
+            <div class="accordion-body">Placeholder content for this accordion, which is intended to demonstrate the <code>.accordion-flush</code> class. This is the second item's accordion body. Let's imagine this being filled with some actual content.</div>
+          </div>
+        </div>
+        
+        <!-- FAQ -->
+
+        
+          <div class="accordion-item">
+            <h2 class="accordion-header" id="h_three">
+              <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#c_three" aria-expanded="false" aria-controls="c_three">
+                Lorem ipsum dolor sit amet.
+              </button>
+            </h2>
+            <div id="c_three" class="accordion-collapse collapse" aria-labelledby="h_three" data-bs-parent="#acc_three">
+              <div class="accordion-body">Placeholder content for this accordion, which is intended to demonstrate the <code>.accordion-flush</code> class. This is the second item's accordion body. Let's imagine this being filled with some actual content.</div>
+            </div>
+          </div>
+      
+    </div>
+  </div>
+  </div>
+</section>
+<!-- Accordian End -->
+
+<section class="badges">
+  <div class="container">
+    <div class="row">
+      <div class="col-md-6 mx-auto">
+        <h1 class="my-4">Badges</h1>
+
+        <span class="badge bg-primary">Primary</span>
+        <span class="badge bg-secondary">Secondary</span>
+        <span class="badge bg-success">Success</span>
+        <span class="badge bg-danger">Danger</span>
+        <span class="badge bg-warning text-dark">Warning</span>
+        <span class="badge bg-info text-dark">Info</span>
+        <span class="badge bg-light text-dark">Light</span>
+        <span class="badge bg-dark">Dark</span>
+        
+        <button type="button" class="btn btn-primary position-relative my-3">
+          Messages
+          <span class="position-absolute top-0 start-100 translate-middle badge rounded-pill bg-danger">
+            1
+            <span class="visually-hidden">unread messages</span>
+          </span>
+        </button>
+
+<h4>Example heading <span class="badge bg-primary">New</span></h4>
+<h5>Example heading <span class="badge bg-danger">New</span></h5>
+<h6>Example heading <span class="badge bg-success">New</span></h6>
+
+      </div>
+    </div>
+  </div>
+</section>
+<!-- Buttons start -->
+
+<section class="buttons">
+  <div class="container">
+    <div class="row">
+      <div class="col-md-6 mx-auto">
+        <h1 class="my-3 mt-5">Buttons</h1>
+        <a class="btn btn-dark" href="#" role="button">Link</a>
+<button class="btn btn-dark" type="submit">Button</button>
+<input class="btn btn-dark" type="button" value="Input">
+<input class="btn btn-dark" type="submit" value="Submit">
+<input class="btn btn-dark" type="reset" value="Reset">
+
+<div class="row my-3">
+  <div class="col-md-12 mx-auto">
+
+<button type="button" class="btn btn-outline-primary">Primary</button>
+<button type="button" class="btn btn-outline-secondary">Secondary</button>
+<button type="button" class="btn btn-outline-success">Success</button>
+<button type="button" class="btn btn-outline-danger">Danger</button>
+
+
+  </div>
+</div>
+
+<div class="row">
+  <div class="col-md-12">
+    
+      <button class="btn btn-danger w-100 my-1" type="button">Button</button>
+      <button class="btn btn-danger w-100 my-1" type="button">Button</button>
+    
+  </div>
+</div>
+      </div>
+    </div>
+  </div>
+</section>
+<!-- Button End -->
+<section class="Card my-5">
+  <div class="container">
+    <div class="row mx-auto">
+      <h1 class="my-5">Cards</h1>
+
+      <div class="col-md-4">
+        <div class="card" style="width: 18rem;">
+          <img src="images/c_1.jpg" class="card-img-top" alt="...">
+          <div class="card-body">
+            <h5 class="card-title">Leo Messi</h5>
+            <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+            <a href="#" class="btn btn-primary">Go somewhere</a>
+          </div>
+        </div>
+      </div>
+      <div class="col-md-4">
+        <div class="card" style="width: 18rem;">
+          <img src="images/c_2.jfif" class="card-img-top" alt="...">
+          <div class="card-body">
+            <h5 class="card-title">C. Ronaldo</h5>
+            <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+            <a href="#" class="btn btn-primary">Go somewhere</a>
+          </div>
+        </div>
+      </div>
+      <div class="col-md-4">
+        <div class="card" style="width: 18rem;">
+          <img src="images/c_3.jfif" class="card-img-top" alt="...">
+          <div class="card-body">
+            <h5 class="card-title">Neymar Jr</h5>
+            <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+            <a href="#" class="btn btn-primary">Go somewhere</a>
+          </div>
+        </div>
+      </div>
+
+    </div>
+  </div>
+</section>
+<!-- Pricing Table Start -->
+<section class="pricingtable my-5">
+  <div class="container">
+    <h1 class="my-5">Pricing Table</h1>
+    <div class="row">
+      <!-- Price-1 -->
+      <div class="col-md-4">
+        <div class="card p_basic">
+          <div class="card-header py-4 c_h1">Basic</div>
+          <div class="card-body">
+            <ul class="list-group list-group-flush">
+              <li class="list-group-item text-center">An item</li>
+              <li class="list-group-item text-center">A second item</li>
+              <li class="list-group-item text-center">A third item</li>
+              <li class="list-group-item text-center">A fourth item</li>
+              <li class="list-group-item text-center">And a fifth one</li>
+            </ul>
+            <h2 class="p_p1 text-center my-3">$299</h2>
+          </div>
+        </div>
+      </div>
+     <!-- Price-2 -->
+<!-- Price-1 -->
+<div class="col-md-4">
+  <div class="card p_basic">
+    <div class="card-header py-4 c_h2">Standard</div>
+    <div class="card-body">
+      <ul class="list-group list-group-flush">
+        <li class="list-group-item text-center">An item</li>
+        <li class="list-group-item text-center">A second item</li>
+        <li class="list-group-item text-center">A third item</li>
+        <li class="list-group-item text-center">A fourth item</li>
+        <li class="list-group-item text-center">And a fifth one</li>
+      </ul>
+      <h2 class="p_p2 text-center my-3">$399</h2>
+    </div>
+  </div>
+</div>
+<!-- Price-2 -->
+
+<!-- Price-1 -->
+<div class="col-md-4">
+  <div class="card p_basic">
+    <div class="card-header py-4 c_h3">Premium</div>
+    <div class="card-body">
+      <ul class="list-group list-group-flush">
+        <li class="list-group-item text-center">An item</li>
+        <li class="list-group-item text-center">A second item</li>
+        <li class="list-group-item text-center">A third item</li>
+        <li class="list-group-item text-center">A fourth item</li>
+        <li class="list-group-item text-center">And a fifth one</li>
+      </ul>
+      <h2 class="p_p3 text-center my-3">$499</h2>
+    </div>
+  </div>
+</div>
+<!-- Price-2 -->
+
+    </div>
+  </div>
+</section>
+
+<!-- Pricing Table End -->
+
+<!-- Navs and Tabs -->
+
+<section class="NavsTabs">
+  <div class="container">
+    <div class="row">
+      
+      <div class="col-md-6 mx-auto">
+        <h1 class="my-4">Navs and Tabs</h1>
+        <ul class="nav nav-tabs" id="myTab" role="tablist">
+          <li class="nav-item" role="presentation">
+            <button class="nav-link active" id="home-tab" data-bs-toggle="tab" data-bs-target="#home" type="button" role="tab" aria-controls="home" aria-selected="true">Bangladesh</button>
+          </li>
+          <li class="nav-item" role="presentation">
+            <button class="nav-link" id="profile-tab" data-bs-toggle="tab" data-bs-target="#profile" type="button" role="tab" aria-controls="profile" aria-selected="false">India</button>
+          </li>
+          <li class="nav-item" role="presentation">
+            <button class="nav-link" id="contact-tab" data-bs-toggle="tab" data-bs-target="#contact" type="button" role="tab" aria-controls="contact" aria-selected="false">Brazil</button>
+          </li>
+        </ul>
+        <div class="tab-content" id="myTabContent">
+          <div class="tab-pane fade show active" id="home" role="tabpanel" aria-labelledby="home-tab"><img src="images/map_bd.jpg" alt=""></div>
+          <div class="tab-pane fade" id="profile" role="tabpanel" aria-labelledby="profile-tab"><img src="images/map_ind.jpg" alt=""></div>
+          <div class="tab-pane fade" id="contact" role="tabpanel" aria-labelledby="contact-tab"><img src="images/map_bra.jfif" alt=""></div>
+        </div>
+
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- Navs and Tabs end -->
+
+<!-- Off Canvas -->
+
+<Section class="OffCanvas mb-5">
+  <div class="container">
+    <div class="row">
+      <div class="col-md-6 mx-auto">
+        <h1 class="my-4">OffCanvas</h1>
+
+        <button class="btn btn-danger" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasExample" aria-controls="offcanvasExample">
+          Hey Mickey Mouse
+        </button>
+        
+        <div class="offcanvas offcanvas-start" tabindex="-1" id="offcanvasExample" aria-labelledby="offcanvasExampleLabel">
+          <div class="offcanvas-header">
+            <h5 class="offcanvas-title" id="offcanvasExampleLabel">Hello There</h5>
+            <button type="button" class="btn-close text-reset" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+          </div>
+          <div class="offcanvas-body">
+         <div class="img_off image-fluid">
+          <img src="images/mickey.jpg" alt="">
+         </div>
+          </div>
+        </div>
+<!-- donald -->
+<button class="btn btn-primary" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasRight" aria-controls="offcanvasRight">Hey Donald Duck</button>
+
+<div class="offcanvas offcanvas-end" tabindex="-1" id="offcanvasRight" aria-labelledby="offcanvasRightLabel">
+  <div class="offcanvas-header">
+    <h5 id="offcanvasRightLabel">Hey</h5>
+    <button type="button" class="btn-close text-reset" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+  </div>
+  <div class="offcanvas-body">
+    <img class="image-fluid" src="images/donaldduck.jpg" alt="">
+  </div>
+</div>
+      </div>
+    </div>
+  </div>
+</Section>
+
+<!-- Off Canvas End -->
+    <!--JS links -->
+    <script src="js/bootstrap.min.js"></script>
+    <script src="js/popper.min.js"></script>
+    <script src="js/script.js"></script>
+  </body>
+</html>
